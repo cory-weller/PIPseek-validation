@@ -6,11 +6,10 @@ module load rclone
 rclone copy --drive-shared-with-me "dtigoogledrive:/DR_cellranger test/" .
 ```
 
-## Run basic cellranger
+## Count gRNA distribution
+see [count_gRNAs.R](scripts/count_gRNAs.R) for detail. Executed as:
+```bash
 Rscript scripts/count_gRNAs.R
-
-```R
-
 ```
 
 ![](plots/gRNA_distribution_linear.png)
