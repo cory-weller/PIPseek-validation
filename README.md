@@ -27,4 +27,4 @@ See table: [gRNA_distribution.tsv](output/gRNA_distribution.tsv)
 
 
 ## Gene expression: Running Cellranger
-[cellranger.sh](scripts/cellranger.sh) ran on Biowulf with `sbatch`. See the web summary [here](output/web_summary.html).
+[cellranger.sh](scripts/cellranger.sh) ran on Biowulf with `sbatch`. Right click and locally save the web summary [here](output/web_summary.html) then open in your browser to view.
