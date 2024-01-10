@@ -24,3 +24,7 @@ Briefly, the script
 ![](plots/gRNA_distribution_log10.png)
 
 See table: [gRNA_distribution.tsv](output/gRNA_distribution.tsv)
+
+
+## Gene expression: Running Cellranger
+[cellranger.sh](scripts/cellranger.sh) ran on Biowulf with `sbatch`. See the web summary [here](output/web_summary.html).
