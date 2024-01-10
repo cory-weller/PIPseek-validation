@@ -53,6 +53,9 @@ dat <- dat[, list('N'=sum(N)), by=list(gRNA, ID, class)][order(N)]
 IDorder <- dat$ID
 dat[, ID := factor(ID, levels=IDorder)]
 
+# Export table
+
+fwrite(dat[order(-N)], file='output/gRNA_distribution.tsv', quote=F, row.names=F, col.names=T, sep='\t')
 # Export on log10 scale
 g <- ggplot(dat[N>1], aes(x=ID, y=log10(N))) + geom_point() +
 theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1)) 
